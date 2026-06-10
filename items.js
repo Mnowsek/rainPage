@@ -1088,7 +1088,7 @@
         document
             .getElementById("btn-back")
             .addEventListener("click", async (n) => {
-                (await C(), location.assign("./../../"));
+                (await C(), location.assign("./../"));
             }));
     const D = document.querySelectorAll(".item");
     function H(n) {
