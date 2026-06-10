@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="img-border-tl">
+    <mask id="mask-tl" maskUnits="userSpaceOnUse">
+      <image href="resources/ui/box/tl.png"
+        width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))"/>
+    </mask>
+    <rect width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))" mask="url(#mask-tl)"/>
+  </symbol>
+  
+  <symbol id="img-border-tr">
+    <mask id="mask-tr" maskUnits="userSpaceOnUse">
+      <image href="resources/ui/box/tr.png"
+        width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))"/>
+    </mask>
+    <rect width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))" mask="url(#mask-tr)"/>
+  </symbol>
+  
+  <symbol id="img-border-br">
+    <mask id="mask-br" maskUnits="userSpaceOnUse">
+      <image href="resources/ui/box/br.png"
+        width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))"/>
+    </mask>
+    <rect width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))" mask="url(#mask-br)"/>
+  </symbol>
+  
+  <symbol id="img-border-bl">
+    <mask id="mask-bl" maskUnits="userSpaceOnUse">
+      <image href="resources/ui/box/bl.png"
+        width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))"/>
+    </mask>
+    <rect width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))" mask="url(#mask-bl)"/>
+  </symbol>
+  
+  
+  
+  <symbol id="img-background-tl">
+    <mask id="mask-bg-tl" maskUnits="userSpaceOnUse">
+      <image href="resources/ui/box/bg_tl.png"
+        width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))"/>
+    </mask>
+    <rect width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))" mask="url(#mask-bg-tl)"/>
+  </symbol>
+  
+  <symbol id="img-background-tr">
+    <mask id="mask-bg-tr" maskUnits="userSpaceOnUse">
+      <image href="resources/ui/box/bg_tr.png"
+        width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))"/>
+    </mask>
+    <rect width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))" mask="url(#mask-bg-tr)"/>
+  </symbol>
+  
+  <symbol id="img-background-br">
+    <mask id="mask-bg-br" maskUnits="userSpaceOnUse">
+      <image href="resources/ui/box/bg_br.png"
+        width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))"/>
+    </mask>
+    <rect width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))" mask="url(#mask-bg-br)"/>
+  </symbol>
+  
+  <symbol id="img-background-bl">
+    <mask id="mask-bg-bl" maskUnits="userSpaceOnUse">
+      <image href="resources/ui/box/bg_bl.png"
+        width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))"/>
+    </mask>
+    <rect width="calc(8px * var(--box-scale, 1))" height="calc(8px * var(--box-scale, 1))" mask="url(#mask-bg-bl)"/>
+  </symbol>
+  
+  <!-- BACKGROUND -->
+  <use href="#img-background-tl" x="0"                                        y="0"                                        fill="var(--box-bg-col, #0000)"/>
+  <use href="#img-background-tr" x="calc(100% - (8px * var(--box-scale, 1)))" y="0"                                        fill="var(--box-bg-col, #0000)"/>
+  <use href="#img-background-br" x="calc(100% - (8px * var(--box-scale, 1)))" y="calc(100% - (8px * var(--box-scale, 1)))" fill="var(--box-bg-col, #0000)"/>
+  <use href="#img-background-bl" x="0"                                        y="calc(100% - (8px * var(--box-scale, 1)))" fill="var(--box-bg-col, #0000)"/>
+  
+  <rect x="calc(       (8px * var(--box-scale, 1)))" y="           var(--box-scale, 1) " width="calc(100% - (16px * var(--box-scale, 1)                             ))" height="calc(100% - ( 2px * var(--box-scale, 1)))" fill="var(--box-bg-col, #0000)"/>
+  <rect x="                   var(--box-scale, 1)  " y="calc(8px * var(--box-scale, 1))" width="calc(       ( 8px * var(--box-scale, 1) - (1px * var(--box-scale, 1)))" height="calc(100% - (16px * var(--box-scale, 1)))" fill="var(--box-bg-col, #0000)"/>
+  <rect x="calc(100% - (8px * var(--box-scale, 1)) " y="calc(8px * var(--box-scale, 1))" width="calc(       ( 8px * var(--box-scale, 1) - (1px * var(--box-scale, 1)))" height="calc(100% - (16px * var(--box-scale, 1)))" fill="var(--box-bg-col, #0000)"/>
+  
+  <!-- BORDER -->
+  <use href="#img-border-tl" x="0"                                        y="0"                                        fill="var(--box-col, #FFF)"/>
+  <use href="#img-border-tr" x="calc(100% - (8px * var(--box-scale, 1)))" y="0"                                        fill="var(--box-col, #FFF)"/>
+  <use href="#img-border-br" x="calc(100% - (8px * var(--box-scale, 1)))" y="calc(100% - (8px * var(--box-scale, 1)))" fill="var(--box-col, #FFF)"/>
+  <use href="#img-border-bl" x="0"                                        y="calc(100% - (8px * var(--box-scale, 1)))" fill="var(--box-col, #FFF)"/>
+  
+  <rect x="calc(       (8px * var(--box-scale, 1)))" y="0                                       " width="calc(100% - (16px * var(--box-scale, 1)))" height="calc(       ( 2px * var(--box-scale, 1)))" fill="var(--box-col, #FFF)"/>
+  <rect x="0                                       " y="calc(       (8px * var(--box-scale, 1)))" width="calc(       ( 2px * var(--box-scale, 1)))" height="calc(100% - (16px * var(--box-scale, 1)))" fill="var(--box-col, #FFF)"/>
+  <rect x="calc(100% - (2px * var(--box-scale, 1)))" y="calc(       (8px * var(--box-scale, 1)))" width="calc(       ( 2px * var(--box-scale, 1)))" height="calc(100% - (16px * var(--box-scale, 1)))" fill="var(--box-col, #FFF)"/>
+  <rect x="calc(       (8px * var(--box-scale, 1)))" y="calc(100% - (2px * var(--box-scale, 1)))" width="calc(100% - (16px * var(--box-scale, 1)))" height="calc(       ( 2px * var(--box-scale, 1)))" fill="var(--box-col, #FFF)"/>
+</svg>
